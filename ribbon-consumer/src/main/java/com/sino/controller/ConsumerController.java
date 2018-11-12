@@ -1,5 +1,6 @@
 package com.sino.controller;
 
+import com.sino.pojo.User;
 import com.sino.service.HelloService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.client.ServiceInstance;
@@ -23,6 +24,24 @@ public class ConsumerController {
     private LoadBalancerClient loadBalancerClient;
     @Autowired
     HelloService helloService;
+
+    @GetMapping("/testdo")
+    public void testController(){
+        helloService.updateUserByIdUsingCacheRemove(100L);
+    }
+
+    /**
+     * @Author Charles York
+     * @Description //TODO根据id 获取User 更改{@com.sino.service.HelloService}中的方法名做测试
+     * @Date  2018/11/12
+     * @Param
+     * @return
+    **/
+    @GetMapping("/user/{id}")
+    public User getUserById(@PathVariable("id") Long id){
+        //here to change
+        return helloService.getUserByIdUsingCacheKeyMethod(id);
+    }
 
     /**
      * 同步调用

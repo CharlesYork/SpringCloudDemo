@@ -7,6 +7,7 @@
       <module fileurl="file://$PROJECT_DIR$/rest-demo/rest-demo.iml" filepath="$PROJECT_DIR$/rest-demo/rest-demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/ribbon-consumer/ribbon-consumer.iml" filepath="$PROJECT_DIR$/ribbon-consumer/ribbon-consumer.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/sc.iml" filepath="$PROJECT_DIR$/.idea/sc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/user-service/user-service.iml" filepath="$PROJECT_DIR$/user-service/user-service.iml" />
     </modules>
   </component>
 </project>

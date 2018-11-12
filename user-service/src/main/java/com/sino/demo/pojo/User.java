@@ -1,4 +1,4 @@
-package com.sino.pojo;
+package com.sino.demo.pojo;
 
 import java.io.Serializable;
 import java.util.Objects;
@@ -15,7 +15,7 @@ public class User implements Serializable {
     public User() {
     }
 
-    public User(Long id, String name, Integer age) {
+    public User(Long id,String name, Integer age) {
         this.id = id;
         this.name = name;
         this.age = age;
